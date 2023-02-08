@@ -7,7 +7,8 @@
 		"dev": "nodemon src/index.js",
 		"start": "node src/index.js",
 		"lint": "eslint --fix src/**/*.js",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"prepare": "husky install"
 	},
 	"author": {
 		"name": "Daniel Projects",
@@ -21,10 +22,16 @@
 		"eslint-plugin-import": "2.27.5",
 		"eslint-plugin-n": "15.6.1",
 		"eslint-plugin-promise": "6.1.1",
+		"husky": "8.0.3",
+		"lint-staged": "13.1.1",
 		"nodemon": "2.0.20",
 		"prettier": "2.8.3"
 	},
 	"imports": {
 		"#Lib/*": "./src/lib/*"
+	},
+	"lint-staged": {
+		"*.js": "eslint --fix",
+		"*.{js,md}": "prettier --write"
 	}
 }
