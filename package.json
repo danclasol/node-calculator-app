@@ -1,6 +1,6 @@
 {
-	"name": "template-node-project",
-	"description": "Template for projects with Node.js",
+	"name": "node-calculator-app",
+	"description": "Calculator app in Node.js",
 	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
@@ -8,7 +8,8 @@
 		"start": "node src/index.js",
 		"lint": "eslint --fix src/**/*.js",
 		"format": "prettier --write .",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"postinstall": "npm run prepare"
 	},
 	"author": {
 		"name": "Daniel Projects",
