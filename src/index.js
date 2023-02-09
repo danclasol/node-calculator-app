@@ -1,5 +1,5 @@
-import { main } from '#Lib/main.js';
 import { closeInterface } from '#Lib/promptQuestion.js';
+import { main } from './main.js';
 
 const app = async () => {
 	let stop = false;
