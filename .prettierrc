@@ -2,7 +2,6 @@
 	"useTabs": true,
 	"semi": true,
 	"singleQuote": true,
-
 	"arrowParens": "avoid",
 	"bracketSameLine": true
 }
